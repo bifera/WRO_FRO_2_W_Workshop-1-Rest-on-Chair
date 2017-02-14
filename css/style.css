@@ -1,3 +1,5 @@
+/* ************* FONTS ************* */
+
 @font-face {
     font-family: 'raleway';
     src: url('../fonts/raleway-regular-webfont.woff2') format('woff2'),
@@ -17,6 +19,8 @@
 
 }
 
+/* UWAGA DO CZCIONEK : RALEWAY BĘDZIE CHYBA SEMIBOLD JAKO BOLD WTF */
+
 /*
 
 @font-face {
@@ -30,8 +34,12 @@
 
 */
 
-* {
+
+/* ************* GENERAL ************* */
+
+body {
     font-family: 'raleway', Helvetica, sans-serif;
+    font-size: 14px;
     box-sizing: border-box;
 }
 
@@ -39,6 +47,7 @@
     width: 1080px;
     margin: 0 auto;
     border: 1px solid red;
+    padding: 0px 13px;
 }
 
 .left {
@@ -49,10 +58,14 @@
     float: right;
 }
 
-/* *********** HEADER *************** */
+a {
+    text-decoration: none;
+}
+
+/* ************* HEADER ************* */
 
 
-/* *** navigation *** */
+/* *** navigation bar *** */
 
 .navbar {
     background-color: #000;
@@ -64,8 +77,9 @@
     content: "";
 }
 
-.logo a {
+.navbar a {
     color: #FFF;
+    text-transform: uppercase;
 }
 
 .aqua {
@@ -78,13 +92,7 @@ ul.menu li {
     padding: 0 15px;
 }
 
-a {
-    text-decoration: none;
-}
-
 ul.menu li a {
-    text-transform: uppercase;
-    color: #fff;
     font-weight: bold;
 }
 
@@ -149,4 +157,63 @@ h1 {
 
 .slider-text p {
     text-align: center;
+}
+
+
+/* ************* MAIN ************* */
+
+.gallery {
+    margin-top: 27px;
+}
+
+.gallery::after {
+    clear: both;
+    display: block;
+    content: "";
+}
+
+.gallery-image {
+    width: 329px;
+    height: 225px;
+    margin-right: 27px;
+    position: relative;
+}
+
+.stripe {
+    width: 329px;
+    height: 62px;
+    background-color: rgba(255, 255, 255, 0.4);
+    position: absolute;
+    bottom: 15px;
+}
+
+.gallery a {
+    display: inline-block;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    width: 137px;
+    border-bottom: 6px solid #22b89f;
+}
+
+.clair {
+    background-image: url(../img/box1_img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.margarita {
+    background-image: url(../img/box2_img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.gallery-text {
+    width: 340px;
+    height: 255px;
+    border: 1px solid #dbdbdb;
+}
+.gallery p {
+    color: #6a6a6a;
+    line-height: 1.5em;
 }
