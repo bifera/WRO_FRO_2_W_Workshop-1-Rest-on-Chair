@@ -162,6 +162,8 @@ h1 {
 
 /* ************* MAIN ************* */
 
+/* *** gallery *** */
+
 .gallery {
     margin-top: 27px;
 }
@@ -216,4 +218,60 @@ h1 {
 .gallery p {
     color: #6a6a6a;
     line-height: 1.5em;
+}
+
+/* *** prices *** */
+/* INSERTED FROM EXERCISES */
+
+.pricing .container::after {
+    clear: both;
+    display: block;
+    content: "";
+}
+
+.pricing-frame {
+    width: 250px;
+    height: 280px;
+    border: 2px solid #d4d4d4;
+    position: relative;
+    font-family: "Trebuchet MS", sans-serif;
+    text-align: center;
+}
+
+.pricing-frame-white-circle {
+    width: 25px;
+    height: 25px;
+    border: 15px solid #fff;
+    background-color: #d4d4d4;
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px #d4d4d4;
+    position: absolute;
+    top: -34px;
+    left: 91px;
+}
+
+.pricing-frame-text {
+    padding-top: 30px;
+}
+
+h2 .pricing-frame-text {
+    font-size: 24px;
+}
+
+p .pricing-frame-text {
+    font-size: 14px;
+    padding: 0px 15px 15px;
+}
+
+
+.z8-a {
+    font-size: 12px;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    background-color: black;
+}
+
+.z9-left {
+    display: inline-block;
 }
