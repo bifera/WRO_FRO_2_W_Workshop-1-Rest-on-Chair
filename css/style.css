@@ -37,10 +37,13 @@
 
 /* ************* GENERAL ************* */
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'raleway', Helvetica, sans-serif;
     font-size: 14px;
-    box-sizing: border-box;
 }
 
 .container {
@@ -194,7 +197,7 @@ h1 {
     color: black;
     font-size: 16px;
     font-weight: bold;
-    width: 137px;
+    width: 140px;
     border-bottom: 6px solid #22b89f;
 }
 
@@ -223,6 +226,10 @@ h1 {
 /* *** prices *** */
 /* INSERTED FROM EXERCISES */
 
+.pricing {
+    background-color: #f1f1f1;
+}
+
 .pricing .container::after {
     clear: both;
     display: block;
@@ -236,11 +243,12 @@ h1 {
     position: relative;
     font-family: "Trebuchet MS", sans-serif;
     text-align: center;
+    margin-top: 20px;
 }
 
 .pricing-frame-white-circle {
-    width: 25px;
-    height: 25px;
+    width: 50px;
+    height: 50px;
     border: 15px solid #fff;
     background-color: #d4d4d4;
     border-radius: 50%;
@@ -273,5 +281,57 @@ p .pricing-frame-text {
 }
 
 .z9-left {
+    display: inline-block;
+}
+
+/* *** contact form *** */
+
+.contact-form .container::after {
+    clear: both;
+    display: block;
+    content: "";
+}
+
+form .left {
+    border: 1px solid red;
+}
+
+.inputs-data {
+    width: 637px;
+    height: 500px;
+    margin-right: 60px;
+}
+
+.inputs-data input {
+    display: inline-block;
+    width: 635px;
+    height: 65px;
+    border: 1px solid #a1e6d1;
+    margin-top: 25px;
+}
+
+.inputs-data textarea {
+    display: inline-block;
+    width: 635px;
+    height: 190px;
+    resize: none;
+    border: 1px solid #a1e6d1;
+    margin-top: 25px;
+}
+
+.inputs-submit {
+    width: 350px;
+}
+
+.contact-form-image {
+    background-image: url(../img/red_chair.png);
+    width: 264px;
+    height: 210px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 1px solid red;
+}
+
+.inputs-submit input {
     display: inline-block;
 }
