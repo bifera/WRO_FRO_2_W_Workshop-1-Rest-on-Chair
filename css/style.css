@@ -50,7 +50,7 @@ body {
     width: 1200px;
     margin: 0 auto;
     border: 1px solid red;
-    padding: 0px 13px;
+    padding: 0px 65px;
 }
 
 .left {
@@ -237,29 +237,55 @@ h1 {
 }
 
 .pricing-frame {
-    width: 250px;
-    height: 280px;
-    border: 2px solid #d4d4d4;
+    width: 325px;
+    height: 500px;
+    background-color: #f9f9f9;
+    border: 2px solid #d3d3d3;
+    border-radius: 2px;
     position: relative;
-    font-family: "Trebuchet MS", sans-serif;
     text-align: center;
     margin-top: 20px;
+    margin: 20px 30px 65px 0px;
 }
 
 .pricing-frame-white-circle {
-    width: 50px;
-    height: 50px;
+    width: 55px;
+    height: 55px;
     border: 15px solid #fff;
-    background-color: #d4d4d4;
+    background-color: #c2c2c2;
     border-radius: 50%;
-    box-shadow: 0 0 0 2px #d4d4d4;
+    box-shadow: 0 0 0 2px #d3d3d3;
     position: absolute;
-    top: -34px;
-    left: 91px;
+    top: -30px;
+    left: 130px;
 }
 
 .pricing-frame-text {
     padding-top: 30px;
+}
+
+.pricing-tag {
+    width: 130px;
+    height: 130px;
+    margin: auto;
+    background-color: #fff;
+    border: 2px solid #dadada;
+    border-radius: 50%;
+}
+
+.price {
+    font-size: 46px;
+    font-weight: bolder;
+    color: #c4c4c4;
+    line-height: 46px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.cents {
+    font-size: 16px;
+    position: relative;
+    top: -12px;
 }
 
 h2 .pricing-frame-text {
@@ -278,10 +304,6 @@ p .pricing-frame-text {
     color: white;
     padding: 10px;
     background-color: black;
-}
-
-.z9-left {
-    display: inline-block;
 }
 
 /* *** contact form *** */
@@ -334,4 +356,16 @@ form .left {
 
 .inputs-submit input {
     display: inline-block;
+}
+
+/* ************* FOOTER ************* */
+
+footer .container::after {
+    clear: both;
+    display: block;
+    content: "";
+}
+
+.social {
+    margin-right: 30px;
 }
