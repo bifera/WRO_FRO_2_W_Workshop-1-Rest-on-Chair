@@ -63,6 +63,22 @@ body {
     float: right;
 }
 
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h3 {
+    width: 320px;
+    text-transform: uppercase;
+    font-size: 22px;
+    color: #595959;
+    font-weight: normal;
+    line-height: 30px;
+    border-bottom: 8px solid #22b89f;
+    margin-bottom: 22px;
+}
+
 a {
     text-decoration: none;
 }
@@ -157,10 +173,6 @@ ul.menu li a {
     margin-top: 100px;
 }
 
-h1 {
-    text-transform: uppercase;
-    text-align: center;
-}
 
 .slider-text p {
     text-align: center;
@@ -382,10 +394,6 @@ h1 {
     content: "";
 }
 
-form .left {
-    border: 1px solid red;
-}
-
 .inputs-data {
     width: 637px;
     height: 500px;
@@ -400,6 +408,12 @@ form .left {
     margin-top: 25px;
 }
 
+.inputs-data input[placeholder], .inputs-data textarea[placeholder] {
+    font-family: 'raleway';
+    font-size: 28px;
+    text-indent: 10px;
+}
+
 .inputs-data textarea {
     display: inline-block;
     width: 635px;
@@ -407,6 +421,10 @@ form .left {
     resize: none;
     border: 1px solid #a1e6d1;
     margin-top: 25px;
+}
+
+.inputs-data textarea[placeholder] {
+    padding-top: 10px;
 }
 
 .inputs-submit {
@@ -420,10 +438,66 @@ form .left {
     background-repeat: no-repeat;
     background-size: contain;
     border: 1px solid red;
+    margin-bottom: 35px;
 }
 
-.inputs-submit input {
+.agree input[type=checkbox] {
+    display:none;
+}
+ 
+.agree input[type=checkbox] + label {
+    background-image: url(../img/form_ok.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 48px;
+    height: 48px;
     display: inline-block;
+    padding: 0;
+    border: 1px solid #a1e6d1; 
+}
+
+.agree input[type=checkbox]:checked + label {
+    background-image: url(../img/form_ok.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+    padding: 0;
+    border: 1px solid #a1e6d1; 
+}
+
+.agreement-text {
+    margin-bottom: 10px;
+}
+
+.agreement-text p {
+    color: #c1c1c1;
+    font-size: 20px;
+    font-weight: lighter;
+    width: 300px;
+    padding: 0 0 0 10px;
+    margin-top: 3px;
+}
+
+.agreement-text::after {
+    clear: both;
+    display: block;
+    content: "";
+}
+
+.agree input[type=submit] {
+    width: 350px;
+    height: 70px;
+    background-color: #24ba9f;
+    border: none;
+    border-radius: 8px;
+    font-family: 'raleway', sans-serif;
+    font-size: 32px;
+    font-weight: bolder;
+    color: #ffffff;
 }
 
 /* ***************************************

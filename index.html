@@ -139,19 +139,25 @@
                     <h3>Kontakt</h3>
                     <form>
                         <div class="inputs-data left">
-                            <input type="text" name="name" id="name" placeholder="Imię">
+                            <input type="text" name="name" id="name" placeholder="Imie">
                             <input type="email" name="email" id="email" placeholder="email">
-                            <textarea name="message" id="message" placeholder="Wiadomość"></textarea>
+                            <textarea name="message" id="message" placeholder="Wiadomosc"></textarea>
                         </div>
                         <div class="inputs-submit left">
                             <div class="contact-form-image">
                             </div>
                             <div class="agree">
-                                <p>
-                                    <input type="checkbox" name="zgoda" value="zgoda" checked>
-                                    Zgadzam się na przetwarzanie danych osobowych.
-                                </p>
-                                <input type="submit" value="WYŚLIJ">
+                                <div class="agreement-text">
+                                    <div class="left">
+                                    <input type="checkbox" name="zgoda" value="zgoda" id="checkbox-agree" checked><label for="checkbox-agree"></label>
+                                    </div>
+                                    <div class="left">
+                                        <p>
+                                            Zgadzam sie na przetwarzanie danych osobowych.
+                                        </p>
+                                    </div>
+                                </div>
+                                <input type="submit" value="WYSLIJ">
                             </div>
                         </div>
                     </form>
