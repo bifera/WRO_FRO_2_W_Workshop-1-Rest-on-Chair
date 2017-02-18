@@ -35,7 +35,9 @@
 */
 
 
-/* ************* GENERAL ************* */
+/* ***************************************
+***************** GENERAL **************** 
+*************************************** */
 
 * {
     box-sizing: border-box;
@@ -65,10 +67,12 @@ a {
     text-decoration: none;
 }
 
-/* ************* HEADER ************* */
+/* ***************************************
+****************** HEADER **************** 
+*************************************** */
 
 
-/* *** navigation bar *** */
+/* ********** navigation bar ********** */
 
 .navbar {
     background-color: #000;
@@ -99,7 +103,7 @@ ul.menu li a {
     font-weight: bold;
 }
 
-/* *** slider *** */
+/* ********** slider ********** */
 
 .slider {
     background: rgba(251,251,251,1);
@@ -163,9 +167,11 @@ h1 {
 }
 
 
-/* ************* MAIN ************* */
+/* ***************************************
+******************* MAIN ***************** 
+*************************************** */
 
-/* *** gallery *** */
+/* ********** gallery ********** */
 
 .gallery {
     margin-top: 27px;
@@ -223,8 +229,7 @@ h1 {
     line-height: 1.5em;
 }
 
-/* *** prices *** */
-/* INSERTED FROM EXERCISES */
+/* ********** prices ********** */
 
 .pricing {
     background-color: #f1f1f1;
@@ -244,7 +249,6 @@ h1 {
     border-radius: 2px;
     position: relative;
     text-align: center;
-    margin-top: 20px;
     margin: 20px 30px 65px 0px;
 }
 
@@ -260,14 +264,25 @@ h1 {
     left: 130px;
 }
 
+
 .pricing-frame-text {
     padding-top: 30px;
+    padding-bottom: 30px;
+    position: relative;
+}
+
+.pricing-frame-text h2 {
+    font-size: 26px;
+    font-weight: lighter;
+    color: #27c7ab;
+    text-transform: uppercase;
 }
 
 .pricing-tag {
     width: 130px;
     height: 130px;
-    margin: auto;
+    margin: 0 auto 35px;
+    color: #c4c4c4;
     background-color: #fff;
     border: 2px solid #dadada;
     border-radius: 50%;
@@ -276,37 +291,90 @@ h1 {
 .price {
     font-size: 46px;
     font-weight: bolder;
-    color: #c4c4c4;
-    line-height: 46px;
-    margin-top: 12px;
-    margin-bottom: 12px;
+
+    line-height: 30px;
+    margin-top: 30px;
+    margin-bottom: 0;
+    margin-left: 5px;
 }
 
 .cents {
     font-size: 16px;
     position: relative;
-    top: -12px;
+    top: -25px;
 }
 
-h2 .pricing-frame-text {
-    font-size: 24px;
+.price-description {
+    text-transform: uppercase;
+    margin-top: 5px;
+    font-weight: bold;
 }
 
-p .pricing-frame-text {
+.feature {
+    font-size: 22px;
+    color: #757575;
+    text-align: center;
+    height: 40px;
+    padding: 6px;
+}
+
+.feature:nth-of-type(2n) {
+    background-color: #e4e4e4;
+    color: #999999;
+}
+
+.feature:nth-of-type(2n+1) {
+    background-color: #f1f1f1;
+}
+
+.pricing-frame-button {
+    position: absolute;
+    top: 450px;
+    left: 100px;
+}
+
+.pricing-frame-button a {
     font-size: 14px;
-    padding: 0px 15px 15px;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 10px 30px;
+    background-color: #27c7ab;
+    border-radius: 8px;
 }
 
+/* ** modifications for middle pricing frame ** */
 
-.z8-a {
-    font-size: 12px;
-    text-decoration: none;
-    color: white;
-    padding: 10px;
-    background-color: black;
+.pricing-frame:nth-of-type(2){
+    background-color: #27c7ab;
+    border: 2px solid #27c7ab;
 }
 
-/* *** contact form *** */
+.pricing-frame:nth-of-type(2) .pricing-frame-white-circle {
+    border: 15px solid #27c7ab;
+    background-color: #fff;
+    box-shadow: none;
+}
+
+.pricing-frame:nth-of-type(2) .pricing-tag {
+    border: 2px solid #27c7ab;
+    border-radius: 50%;
+    color: #27c7ab;
+}
+
+.pricing-frame:nth-of-type(2) .pricing-frame-text h2 {
+    color: #ffffff;
+}
+
+.pricing-frame:nth-of-type(2) .feature:nth-of-type(2n) {
+    background-color: #ffffff;
+}
+
+.pricing-frame:nth-of-type(2) .pricing-frame-button a {
+    color: #27c7ab;
+    background-color: #ffffff;
+}
+
+/* ********** contact form ********** */
 
 .contact-form .container::after {
     clear: both;
@@ -358,7 +426,9 @@ form .left {
     display: inline-block;
 }
 
-/* ************* FOOTER ************* */
+/* ***************************************
+****************** FOOTER **************** 
+*************************************** */
 
 footer .container::after {
     clear: both;
