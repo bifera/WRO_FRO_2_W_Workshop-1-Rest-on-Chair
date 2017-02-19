@@ -18,6 +18,14 @@
 }
 
 @font-face {
+    font-family: 'raleway-light';
+    src: url('../fonts/raleway-light-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'raleway-medium';
     src: url('../fonts/raleway-medium-webfont.woff2') format('woff2'),
          url('../fonts/raleway-medium-webfont.woff') format('woff');
@@ -396,29 +404,33 @@ ul.menu li a {
 
 /* ********** contact form ********** */
 
-.contact-form .container::after {
+.contact-form {
+    padding-top: 30px;
+}
+
+.contact-form::after {
     clear: both;
     display: block;
     content: "";
 }
 
 .inputs-data {
-    width: 637px;
-    height: 500px;
+    width: 635px;
+    height: 480px;
     margin-right: 60px;
 }
 
 .inputs-data input {
     display: inline-block;
     width: 635px;
-    height: 65px;
+    height: 66px;
     border: 1px solid #a1e6d1;
     margin-top: 25px;
 }
 
 .inputs-data input[placeholder], .inputs-data textarea[placeholder] {
-    font-family: 'raleway';
-    font-size: 28px;
+    font-family: 'raleway-light', Helvetica, sans-serif;
+    font-size: 32px;
     text-indent: 10px;
 }
 
@@ -429,10 +441,7 @@ ul.menu li a {
     resize: none;
     border: 1px solid #a1e6d1;
     margin-top: 25px;
-}
-
-.inputs-data textarea[placeholder] {
-    padding-top: 10px;
+    padding-top: 12px;
 }
 
 .inputs-submit {
@@ -483,8 +492,8 @@ ul.menu li a {
 
 .agreement-text p {
     color: #c1c1c1;
+    font-family: 'raleway-light', Helvetica, sans-serif;
     font-size: 20px;
-    font-weight: lighter;
     width: 300px;
     padding: 0 0 0 10px;
     margin-top: 3px;
