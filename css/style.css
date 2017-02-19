@@ -186,7 +186,8 @@ ul.menu li a {
 /* ********** gallery ********** */
 
 .gallery {
-    margin-top: 27px;
+    padding-top: 30px;
+    padding-bottom: 70px;
 }
 
 .gallery::after {
@@ -208,6 +209,7 @@ ul.menu li a {
     background-color: rgba(255, 255, 255, 0.4);
     position: absolute;
     bottom: 15px;
+    padding: 15px 0 0 15px;
 }
 
 .gallery a {
@@ -216,7 +218,7 @@ ul.menu li a {
     font-size: 16px;
     font-weight: bold;
     width: 140px;
-    border-bottom: 6px solid #22b89f;
+    border-bottom: 6px solid #28c6ad;
 }
 
 .clair {
@@ -235,6 +237,7 @@ ul.menu li a {
     width: 340px;
     height: 255px;
     border: 1px solid #dbdbdb;
+    padding: 25px 20px;
 }
 .gallery p {
     color: #6a6a6a;
