@@ -78,8 +78,10 @@ body {
 }
 
 h1 {
+    font-family: 'raleway-light', Helvetica, sans-serif;
     text-transform: uppercase;
     text-align: center;
+    font-size: 40px;
 }
 
 h2 {
@@ -131,6 +133,7 @@ a {
 }
 
 .aqua {
+    font-family: 'raleway', Helvetica, sans-serif;
     font-weight: bold;
     color: #27c7ab;
 }
@@ -157,7 +160,7 @@ ul.menu li a {
     height: 500px;
 }
 
-.slider .container {
+.slider-background {
     background-image: url(../img/black_chair.png);
     background-repeat: no-repeat;
     background-position: -30px 60px;
@@ -166,41 +169,54 @@ ul.menu li a {
     height: 500px;
 }
 
-.slider .container::after {
+.slider::after {
     clear: both;
     display: block;
     content: "";
 }
 
-.arrow-left a {
-    float: left;
-    font-size: 90px; /*poprawić font-weight!!! albo font-family czy co */
+.arrow a {
+    font-family: 'raleway-light', Helvetica, sans-serif;
+    font-size: 78px;
     color: #27c7ab;
-    padding: 20px;
     position: absolute;
-    top: 160px;
+    top: 200px;
 }
 
-.arrow-right a {
-    float: right;
-    font-size: 90px; /*poprawić font-weight!!! albo font-family czy co */
-    color: #27c7ab;
-    padding: 20px;
+.arrow.right {
     position: absolute;
-    top: 160px;
-    right: 0px;
+    right: 125px;
 }
 
 .slider-text {
-    width: 500px;
+    width: 450px;
+    height: 270px;
     border: 1px solid red;
-    margin-right: 150px;
-    margin-top: 100px;
+    position: absolute;
+    top: 105px;
+    right: 210px;
 }
-
 
 .slider-text p {
     text-align: center;
+    line-height: 1.5;
+}
+
+.slider-button {
+    display: inline-block;
+    font-family: 'raleway-medium', Helvetica, sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+    width: 265px;
+    height: 50px;
+    padding-top: 13px;
+    background-color: #27c7ab;
+    border-radius: 8px;
+    position: relative;
+    left: 90px;
+    top: 20px;
 }
 
 
