@@ -41,6 +41,14 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'raleway-extrabold';
+    src: url('../fonts/raleway-extrabold-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* ***************************************
 ***************** GENERAL **************** 
 *************************************** */
@@ -521,12 +529,37 @@ ul.menu li a {
 ****************** FOOTER **************** 
 *************************************** */
 
+footer .container {
+    padding-bottom: 25px;
+}
+
 footer .container::after {
     clear: both;
     display: block;
     content: "";
 }
 
+footer p {
+    font-family: 'raleway-medium', Helvetica, sans-serif;
+    font-size: 16px;
+    color: #a9a9a9;
+}
+
+footer .right a {
+    font-family: 'raleway-semibold', Helvetica, sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #989898;
+}
+
+.footer-logo {
+    margin-right: 75px;
+}
+
+.footer-logo span {
+    font-family: 'raleway-extrabold', Helvetica, sans-serif;
+}
+
 .social {
-    margin-right: 30px;
+    margin-right: 80px;
 }
